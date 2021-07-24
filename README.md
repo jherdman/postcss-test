@@ -1,38 +1,18 @@
 postcss-test
 ==============================================================================
 
-[Short description of the addon.]
+Reproduction for https://github.com/jeffjewiss/ember-cli-postcss/issues/136.
 
-
-Compatibility
-------------------------------------------------------------------------------
-
-* Ember.js v3.20 or above
-* Ember CLI v3.20 or above
-* Node.js v10 or above
-
-
-Installation
-------------------------------------------------------------------------------
-
-```
-ember install postcss-test
+```bash
+$ npm run build
 ```
 
+You should see the following error:
 
-Usage
-------------------------------------------------------------------------------
+```bash
+Environment: production
+cleaning up...
+Build Error (PostcssCompiler)
 
-[Longer description of how to use the addon in apps.]
-
-
-Contributing
-------------------------------------------------------------------------------
-
-See the [Contributing](CONTRIBUTING.md) guide for details.
-
-
-License
-------------------------------------------------------------------------------
-
-This project is licensed under the [MIT License](LICENSE.md).
+You must provide at least 1 plugin in the plugin array
+```
